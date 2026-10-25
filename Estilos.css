@@ -83,35 +83,38 @@ body {
   background-color: #ffb871;
   color: var(--blanco-alltec);
 }
-
 /* ===================================================
-   2. SECCIÓN BANNER (HERO)
+   CORRECCIÓN DEL BANNER PRINCIPAL (HERO)
    =================================================== */
 .banner-img {
   position: relative;
-  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('Images/slider-image1.png') center/cover no-repeat;
-  min-height: 550px;
+  /* Ruta universal: Asegúrate de que la extensión (.png o .jpeg) coincida exactamente en el servidor */
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('Images/slider-image1.png') center/cover no-repeat;
+  min-height: 550px; /* Garantiza la altura en GitHub Pages */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Cuadro transparente sobre la imagen principal */
+/* Cuadro transparente sobre el banner */
 .jumbotrom {
-  padding: 30px;
-  border-top: 5px solid var(--naranja-alltec);
+  padding: 35px 25px;
+  border-top: 5px solid var(--naranja-alltec, #F7931E);
   width: 90%;
-  max-width: 600px;
-  background-color: rgba(0, 0, 0, 0.5) !important;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--blanco-alltec);
+  max-width: 650px;
+  background-color: rgba(0, 0, 0, 0.65) !important;
+  color: #ffffff;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+  margin: 40px auto; /* Garantiza el centrado vertical y horizontal sin aplastar elementos */
 }
 
 .jumbotrom h1 {
   font-size: 2.2rem;
-  font-weight: bold;
+  font-weight: 800;
+  color: #ffffff;
 }
 
 /* ===================================================
