@@ -1,9 +1,7 @@
-/* ===================================================
-   VARIABLES DE MARCA Y CONFIGURACIÓN GLOBAL
-   =================================================== */
+
 :root {
   --naranja-alltec: #F7931E;
-  --naranja-capsula: #f8e7d2; /* Tono beige/naranja claro de la cápsula */
+  --naranja-capsula: #f8e7d2; 
   --gris-oscuro-alltec: #333333;
   --negro-alltec: #000000;
   --blanco-alltec: #ffffff;
@@ -91,8 +89,8 @@ body {
    =================================================== */
 .banner-img {
   position: relative;
-  background: url('Images/slider-image1.jpeg') center/cover no-repeat;
-  height: 600px;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('Images/slider-image1.png') center/cover no-repeat;
+  min-height: 550px;
 }
 
 /* Cuadro transparente sobre la imagen principal */
@@ -167,4 +165,35 @@ footer {
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
   z-index: 999;
   text-decoration: none;
+}
+
+/* REGLAS ADICIONALES: IDEA 2 (BANNER GAMING & GLOW)*/
+.jumbotrom {
+  padding: 35px 30px;
+  border: 2px solid var(--naranja-alltec); 
+  width: 90%;
+  max-width: 680px;
+  background-color: rgba(18, 18, 18, 0.479) !important; /* Fondo oscuro transparente */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--blanco-alltec);
+  text-align: center;
+  border-radius: 16px;
+  backdrop-filter: blur(2px); /* Efecto cristal traslúcido */
+}
+
+.jumbotrom h1 {
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+/* Formulario*/
+.formulario{
+  background-image: linear-gradient(to right, #333333, #575757);
+  padding: 30px;
+  border-radius: 10px;
+  color: var(--blanco-alltec);
+
+  box-shadow: 0px 5px 0px var(--naranja-alltec) !important;
 }
