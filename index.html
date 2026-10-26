@@ -72,19 +72,77 @@
     </div>
   </div>
 </section><br><br><br><br>
+
+<!-- FRANJA DE BENEFICIOS -->
+<section class="bg-dark text-white py-4 border-top border-bottom border-warning">
+  <div class="container">
+    <div class="row g-4 text-center justify-content-center align-items-center">
+      
+      <!-- Beneficio 1 -->
+      <div class="col-6 col-md-3">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+          <div class="fs-2 text-naranja">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="text-start text-md-center">
+            <h6 class="fw-bold mb-0">100% Garantizado</h6>
+            <small class="text-secondary">Repuestos y servicio seguro</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beneficio 2 -->
+      <div class="col-6 col-md-3">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+          <div class="fs-2 text-naranja">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <div class="text-start text-md-center">
+            <h6 class="fw-bold mb-0">Atención Rápida</h6>
+            <small class="text-secondary">Diagnóstico profesional</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beneficio 3 -->
+      <div class="col-6 col-md-3">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+          <div class="fs-2 text-naranja">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="text-start text-md-center">
+            <h6 class="fw-bold mb-0">Atención en Mosquera</h6>
+            <small class="text-secondary">Cr 20 #20 A-85</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Beneficio 4 -->
+      <div class="col-6 col-md-3">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+          <div class="fs-2 text-naranja">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <div class="text-start text-md-center">
+            <h6 class="fw-bold mb-0">WhatsApp Directo</h6>
+            <small class="text-secondary">Respuesta inmediata</small>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section><br><br>
+
 <!-- SECCIÓN CUESTIONARIO DE FUNCIONAMIENTO Y DIAGNÓSTICO -->
-<section id="Diagnostico" class="container my-5">
+  <section id="Diagnostico" class="container my-5">
   <form id="formCuestionario" class="formulario needs-validation shadow-sm" novalidate>
     <h2 class="mb-4 text-center fw-bold text-light">Cuestionario sobre Funcionamiento</h2>
-    
-    <!-- Campo 1: Nombre completo -->
     <div class="mb-3">
       <label for="inputNombre" class="form-label fw-semibold">Nombre Completo</label>
       <input type="text" class="form-control" id="inputNombre" placeholder="Tu nombre y apellido" required>
       <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
     </div>
-
-    <!-- Campo 2: Selector de Dispositivo -->
     <div class="mb-3">
       <label for="selectDispositivo" class="form-label fw-semibold">¿Qué dispositivo usas?</label>
       <select class="form-select" id="selectDispositivo" required>
@@ -95,8 +153,6 @@
       </select>
       <div class="invalid-feedback">Por favor, selecciona un dispositivo.</div>
     </div>
-
-    <!-- Campo 3: Selector de Problema / Falla -->
     <div class="mb-3">
       <label for="selectProblema" class="form-label fw-semibold">¿Qué problema estás experimentando?</label>
       <select class="form-select" id="selectProblema" required>
@@ -109,23 +165,86 @@
       </select>
       <div class="invalid-feedback">Por favor, selecciona el tipo de problema.</div>
     </div>
-
-    <!-- Campo 4: Detalle adicional (Se muestra si selecciona 'otro') -->
     <div id="contenedorOtro" class="mb-3 d-none">
       <label for="inputOtro" class="form-label fw-semibold">Cuéntanos más sobre el problema</label>
       <textarea class="form-control" id="inputOtro" rows="3" placeholder="Describe detalladamente lo que le sucede a tu equipo..."></textarea>
       <div class="invalid-feedback">Por favor, detalla la falla de tu equipo.</div>
     </div>
-
-    <!-- Botón de Envío e Interacción -->
     <button type="submit" class="btn btn-alltec w-100 mt-3">
       <i class="fab fa-whatsapp me-2"></i> Enviar Diagnóstico a WhatsApp
     </button>
   </form>
+  </section>
+  <br><br>
+
+<!-- RESUMEN DE SERVICIOS -->
+<section id="ServiciosResumen" class="container py-5">
+  <div class="text-center mb-5">
+    <h2 class="fw-bold">Nuestras Soluciones Principales</h2>
+    <p class="text-muted">Conoce las tres líneas de atención especializada de Alltec</p>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    
+    <!-- Tarjeta 1: Soporte Técnico -->
+    <div class="col">
+      <div class="card h-100 p-4 border-0 shadow-sm rounded-4">
+        <div class="fs-1 text-warning mb-3">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+        </div>
+        <h4 class="fw-bold mb-2">Soporte Técnico & Mantenimiento</h4>
+        <p class="text-muted small flex-grow-1">
+          Mantenimiento preventivo y correctivo para portátiles, computadores de escritorio e impresoras. Limpieza profunda y cambio de pasta térmica.
+        </p>
+        <div class="pt-3 border-top mt-auto">
+          <a href="Seccion/Servicios/index.html" class="text-decoration-none fw-bold text-warning">
+            Ver mantenimiento <i class="fa-solid fa-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 2: Impresoras e Insumos -->
+    <div class="col">
+      <div class="card h-100 p-4 border-0 shadow-sm rounded-4">
+        <div class="fs-1 text-warning mb-3">
+          <i class="fa-solid fa-print"></i>
+        </div>
+        <h4 class="fw-bold mb-2">Impresoras & Suministros</h4>
+        <p class="text-muted small flex-grow-1">
+          Venta de impresoras, suministros de tinta originales y alternativos con soporte y asesoría para mantener tus equipos listos.
+        </p>
+        <div class="pt-3 border-top mt-auto">
+          <a href="Seccion/Servicios/index.html" class="text-decoration-none fw-bold text-warning">
+            Ver tintas y repuestos <i class="fa-solid fa-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tarjeta 3: Streaming y Accesorios -->
+    <div class="col">
+      <div class="card h-100 p-4 border-0 shadow-sm rounded-4">
+        <div class="fs-1 text-warning mb-3">
+          <i class="fa-solid fa-tv"></i>
+        </div>
+        <h4 class="fw-bold mb-2">Streaming & Accesorios</h4>
+        <p class="text-muted small flex-grow-1">
+          Suscripciones a plataformas de entretenimiento (Netflix, Disney+, Prime Video) y distribuciones de periféricos de computación.
+        </p>
+        <div class="pt-3 border-top mt-auto">
+          <a href="Seccion/Servicios/index.html" class="text-decoration-none fw-bold text-warning">
+            Ver catálogo completo <i class="fa-solid fa-arrow-right ms-1"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </section>
-<br><br>
+
 <!-- SECCIÓN DE CONTACTO -->
-<div id="Contacto" class="bg-light  py-5 border-top">
+<br><br><div id="Contacto" class="bg-light  py-5 border-top">
         <div class="container">
             <h1 class="fw-bold">Sobre alltec.</h1><br><br>
             <div class="row mt-4">

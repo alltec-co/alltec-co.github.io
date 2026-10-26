@@ -146,6 +146,9 @@ small {
   color: #757575;
 }
 
+.text-naranja{
+  color: var(--naranja-alltec)!important;
+}
 /* ===================================================
    4. PIE DE PÁGINA (FOOTER)
    =================================================== */
