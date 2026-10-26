@@ -72,49 +72,57 @@
     </div>
   </div>
 </section><br><br><br><br>
-<!--SECCIÓN DEL FORMULARIO-->
-<section class="container">
-  <form class="formulario shadow-sm needs-validation"  novalidate>
-    <h2 class="mb-4 text-center">Cuestionario sobre Funcionamiento</h2>
-    <!-- Campo: Nombre completo -->
+<!-- SECCIÓN CUESTIONARIO DE FUNCIONAMIENTO Y DIAGNÓSTICO -->
+<section id="Diagnostico" class="container my-5">
+  <form id="formCuestionario" class="formulario needs-validation shadow-sm" novalidate>
+    <h2 class="mb-4 text-center fw-bold text-light">Cuestionario sobre Funcionamiento</h2>
+    
+    <!-- Campo 1: Nombre completo -->
     <div class="mb-3">
-      <label for="inputNombre" class="form-label">Nombre Completo</label>
-      <input type="text" class="form-control" id="inputNombre" required>
+      <label for="inputNombre" class="form-label fw-semibold">Nombre Completo</label>
+      <input type="text" class="form-control" id="inputNombre" placeholder="Tu nombre y apellido" required>
       <div class="invalid-feedback">Por favor, ingresa tu nombre.</div>
     </div>
-    <!-- campo: Selector (Dispositivo) -->
+
+    <!-- Campo 2: Selector de Dispositivo -->
     <div class="mb-3">
-      <label for="selectDispositivo" class="form-label">¿Qué dispositivo usas?</label>
+      <label for="selectDispositivo" class="form-label fw-semibold">¿Qué dispositivo usas?</label>
       <select class="form-select" id="selectDispositivo" required>
         <option selected disabled value="">Selecciona una opción...</option>
-        <option value="1">Computadora</option>
-        <option value="2">Portátil</option>
-        <option value="3">Impresora</option>
+        <option value="Computadora de Mesa">Computadora de Mesa</option>
+        <option value="Portátil">Portátil</option>
+        <option value="Impresora">Impresora</option>
       </select>
       <div class="invalid-feedback">Por favor, selecciona un dispositivo.</div>
     </div>
-    <!-- Campo: Selector (Problema) -->
+
+    <!-- Campo 3: Selector de Problema / Falla -->
     <div class="mb-3">
-      <label for="selectProblema" class="form-label">¿Qué problema estás experimentando?</label>
+      <label for="selectProblema" class="form-label fw-semibold">¿Qué problema estás experimentando?</label>
       <select class="form-select" id="selectProblema" required>
         <option selected disabled value="">Selecciona una opción...</option>
-        <option value="1">El dispositivo no enciende</option>
-        <option value="2">El dispositivo corre lento</option>
-        <option value="3">Mal funcionamiento</option>
-        <option value="4">Otro problema</option>
+        <option value="El dispositivo no enciende">El dispositivo no enciende</option>
+        <option value="El dispositivo corre lento / se congela">El dispositivo corre lento / se congela</option>
+        <option value="Mal funcionamiento general / Virus">Mal funcionamiento general / Virus</option>
+        <option value="Falla de impresión o tintas">Falla de impresión o tintas</option>
+        <option value="otro">Otro problema (Especificar)</option>
       </select>
       <div class="invalid-feedback">Por favor, selecciona el tipo de problema.</div>
     </div>
-    <!-- Contenedor del campo "Otro" (Oculto inicialmente con d-none) -->
+
+    <!-- Campo 4: Detalle adicional (Se muestra si selecciona 'otro') -->
     <div id="contenedorOtro" class="mb-3 d-none">
-      <label for="Otro" class="form-label">Cuéntanos más sobre el problema</label>
-      <input type="text" class="form-control" id="Otro" placeholder="Escribe aquí tu problema...">
-      <div class="invalid-feedback">Por favor, detalla el problema que experimentas.</div>
+      <label for="inputOtro" class="form-label fw-semibold">Cuéntanos más sobre el problema</label>
+      <textarea class="form-control" id="inputOtro" rows="3" placeholder="Describe detalladamente lo que le sucede a tu equipo..."></textarea>
+      <div class="invalid-feedback">Por favor, detalla la falla de tu equipo.</div>
     </div>
-    <!-- Botón de Envío -->
-    <button type="submit" class="btn btn-alltec w-100">Enviar Formulario</button>
-    </form>
-  </section>
+
+    <!-- Botón de Envío e Interacción -->
+    <button type="submit" class="btn btn-alltec w-100 mt-3">
+      <i class="fab fa-whatsapp me-2"></i> Enviar Diagnóstico a WhatsApp
+    </button>
+  </form>
+</section>
 <br><br>
 <!-- SECCIÓN DE CONTACTO -->
 <div id="Contacto" class="bg-light  py-5 border-top">
