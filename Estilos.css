@@ -209,23 +209,28 @@ footer {
 
 .card {
   background-color: var(--negro-alltec);
-  padding: 20px;
-  border-radius: 8px;
-
+  border-radius: 10px;
   min-width: 400px;
   max-height: 500px;
   color: var(--blanco-alltec);
   text-align: left;
-  padding: 0px;
-  border-radius: 10px;
+  padding: 0px; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.img{
+.img {
   max-height: 400px;
   border-radius: 10px;
   background-size: cover;
   box-shadow: 2px 0px 5px 0px var(--naranja-alltec) !important;
 }
+
+/* 2. EFECTO HOVER */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
 
 @media (max-width: 768px) {
   .card {
